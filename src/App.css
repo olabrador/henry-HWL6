@@ -118,6 +118,11 @@
   text-align: center;
 }
 
+.card h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
 .counter-btn {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
