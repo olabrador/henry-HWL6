@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Comparison Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background: #f5f5f5; padding: 20px; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .header p { opacity: 0.9; }
+        .score-card { background: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .score-large { font-size: 4em; font-weight: bold; color: #667eea; }
+        .grade { font-size: 2em; color: #764ba2; margin-top: 10px; }
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .metric-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .metric-card h3 { color: #333; margin-bottom: 10px; font-size: 0.9em; text-transform: uppercase; }
+        .metric-value { font-size: 2em; font-weight: bold; }
+        .status-good { color: #28a745; }
+        .status-warning { color: #ffc107; }
+        .status-poor { color: #dc3545; }
+        .section { background: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .section h2 { color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+        .comparison-table th { background: #f8f9fa; font-weight: 600; color: #333; }
+        .comparison-table tr:hover { background: #f8f9fa; }
+        .bottleneck { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+        .bottleneck.high { background: #f8d7da; border-left-color: #dc3545; }
+        .bottleneck h3 { color: #333; margin-bottom: 10px; }
+        .bottleneck p { margin: 5px 0; }
+        .recommendation { background: #e7f3ff; border-left: 4px solid #2196F3; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+        .recommendation.high { border-left-color: #dc3545; }
+        .recommendation.medium { border-left-color: #ffc107; }
+        .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 0.85em; font-weight: 600; }
+        .badge-high { background: #dc3545; color: white; }
+        .badge-medium { background: #ffc107; color: #333; }
+        .badge-good { background: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Performance Comparison Report</h1>
+            <p><strong>URL:</strong> https://henry-hwl-6.vercel.app/</p>
+            <p><strong>Date:</strong> 8/11/2025, 2:18:46 p. m.</p>
+        </div>
+
+        <div class="score-card">
+            <div class="score-large">90</div>
+            <div class="grade">Grade: A</div>
+            <p style="margin-top: 10px; color: #666;">Lighthouse Score: 96</p>
+        </div>
+
+        <div class="summary-grid">
+            <div class="metric-card">
+                <h3>Good Metrics</h3>
+                <div class="metric-value status-good">13</div>
+            </div>
+            <div class="metric-card">
+                <h3>Needs Improvement</h3>
+                <div class="metric-value status-warning">0</div>
+            </div>
+            <div class="metric-card">
+                <h3>Poor Metrics</h3>
+                <div class="metric-value status-poor">0</div>
+            </div>
+            <div class="metric-card">
+                <h3>Bottlenecks</h3>
+                <div class="metric-value">0</div>
+                <small style="color: #dc3545;">0 critical</small>
+            </div>
+        </div>
+
+        
+
+        <div class="section">
+            <h2>📊 Core Web Vitals</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Threshold (Good)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                            <tr>
+                                <td><strong>largestContentfulPaint</strong></td>
+                                <td>1.28 s</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>2.50 s</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>firstInputDelay</strong></td>
+                                <td>35 ms</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>100 ms</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>cumulativeLayoutShift</strong></td>
+                                <td>0.050</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>0.100</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>firstContentfulPaint</strong></td>
+                                <td>686 ms</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>1.80 s</td>
+                            </tr>
+                        
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>⏱️ Loading Metrics</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Threshold (Good)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                            <tr>
+                                <td><strong>timeToFirstByte</strong></td>
+                                <td>56.425000000000004</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>800</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>timeToInteractive</strong></td>
+                                <td>1.28 s</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>3.50 s</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>speedIndex</strong></td>
+                                <td>686 ms</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>3.40 s</td>
+                            </tr>
+                        
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>📦 Resource Metrics</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Threshold (Good)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                            <tr>
+                                <td><strong>totalRequests</strong></td>
+                                <td>12</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>50</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>totalTransferSize</strong></td>
+                                <td>203.01 KB</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>1.95 MB</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>imageSize</strong></td>
+                                <td>42 bytes</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>1.00 MB</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>scriptSize</strong></td>
+                                <td>199.36 KB</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>500.00 KB</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>stylesheetSize</strong></td>
+                                <td>1.74 KB</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>100.00 KB</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><strong>fontSize</strong></td>
+                                <td>0 bytes</td>
+                                <td><span class="status-good">✅ ✅ Good</span></td>
+                                <td>100.00 KB</td>
+                            </tr>
+                        
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

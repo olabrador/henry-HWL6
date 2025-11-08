@@ -1,0 +1,220 @@
+{
+  "url": "https://henry-hwl-6.vercel.app/",
+  "timestamp": "2025-11-08T18:18:46.156Z",
+  "lighthouseReportPath": "HOMEWORK_ANSWERS/step5/henry-hwl-6.vercel.app-20251108T141727.json",
+  "metrics": {
+    "coreWebVitals": {
+      "largestContentfulPaint": 1283.7885,
+      "firstContentfulPaint": 685.61,
+      "cumulativeLayoutShift": 0.04995510417686066,
+      "firstInputDelay": 35,
+      "interactionToNextPaint": null
+    },
+    "loadingMetrics": {
+      "timeToFirstByte": 56.425000000000004,
+      "domContentLoaded": null,
+      "loadComplete": null,
+      "timeToInteractive": 1283.7885,
+      "totalBlockingTime": null,
+      "speedIndex": 685.61
+    },
+    "resourceMetrics": {
+      "totalRequests": 12,
+      "totalTransferSize": 207883,
+      "imageSize": 42,
+      "scriptSize": 204148,
+      "stylesheetSize": 1779,
+      "fontSize": 0
+    },
+    "lighthouseScore": 96
+  },
+  "comparison": {
+    "coreWebVitals": {
+      "largestContentfulPaint": {
+        "value": 1283.7885,
+        "threshold": {
+          "good": 2500,
+          "needsImprovement": 4000,
+          "poor": 6000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -1216.2115,
+        "percentageOverGood": -48.64845999999999
+      },
+      "firstInputDelay": {
+        "value": 35,
+        "threshold": {
+          "good": 100,
+          "needsImprovement": 300,
+          "poor": 500
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -65,
+        "percentageOverGood": -65
+      },
+      "cumulativeLayoutShift": {
+        "value": 0.04995510417686066,
+        "threshold": {
+          "good": 0.1,
+          "needsImprovement": 0.25,
+          "poor": 0.5
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "score",
+        "difference": -0.05004489582313935,
+        "percentageOverGood": -50.04489582313935
+      },
+      "firstContentfulPaint": {
+        "value": 685.61,
+        "threshold": {
+          "good": 1800,
+          "needsImprovement": 3000,
+          "poor": 5000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -1114.3899999999999,
+        "percentageOverGood": -61.91055555555555
+      }
+    },
+    "loadingMetrics": {
+      "timeToFirstByte": {
+        "value": 56.425000000000004,
+        "threshold": {
+          "good": 800,
+          "needsImprovement": 1800,
+          "poor": 3000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -743.575,
+        "percentageOverGood": -92.946875
+      },
+      "timeToInteractive": {
+        "value": 1283.7885,
+        "threshold": {
+          "good": 3500,
+          "needsImprovement": 5500,
+          "poor": 8000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -2216.2115,
+        "percentageOverGood": -63.32032857142856
+      },
+      "speedIndex": {
+        "value": 685.61,
+        "threshold": {
+          "good": 3400,
+          "needsImprovement": 5800,
+          "poor": 8500
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -2714.39,
+        "percentageOverGood": -79.835
+      }
+    },
+    "resourceMetrics": {
+      "totalRequests": {
+        "value": 12,
+        "threshold": {
+          "good": 50,
+          "needsImprovement": 75,
+          "poor": 100
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "requests",
+        "difference": -38,
+        "percentageOverGood": -76
+      },
+      "totalTransferSize": {
+        "value": 207883,
+        "threshold": {
+          "good": 2048000,
+          "needsImprovement": 4096000,
+          "poor": 6144000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -1840117,
+        "percentageOverGood": -89.84946289062499
+      },
+      "imageSize": {
+        "value": 42,
+        "threshold": {
+          "good": 1048576,
+          "needsImprovement": 2097152,
+          "poor": 3145728
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -1048534,
+        "percentageOverGood": -99.9959945678711
+      },
+      "scriptSize": {
+        "value": 204148,
+        "threshold": {
+          "good": 512000,
+          "needsImprovement": 1024000,
+          "poor": 1536000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -307852,
+        "percentageOverGood": -60.127343749999994
+      },
+      "stylesheetSize": {
+        "value": 1779,
+        "threshold": {
+          "good": 102400,
+          "needsImprovement": 204800,
+          "poor": 307200
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -100621,
+        "percentageOverGood": -98.2626953125
+      },
+      "fontSize": {
+        "value": 0,
+        "threshold": {
+          "good": 102400,
+          "needsImprovement": 204800,
+          "poor": 307200
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -102400,
+        "percentageOverGood": -100
+      }
+    }
+  },
+  "bottlenecks": [],
+  "summary": {
+    "totalMetrics": 13,
+    "good": 13,
+    "needsImprovement": 0,
+    "poor": 0,
+    "bottlenecksCount": 0,
+    "criticalBottlenecks": 0
+  },
+  "recommendations": [],
+  "score": 90,
+  "grade": "A"
+}
