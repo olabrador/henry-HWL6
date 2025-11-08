@@ -12,7 +12,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "Inicio":
-        return <Home />;
+        return <Services />;
       case "Productos":
         return <Products />;
       case "Servicios":

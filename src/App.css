@@ -56,9 +56,19 @@
   color: #667eea;
 }
 
+.nav-link:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
 .nav-link.active {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+}
+
+.nav-link.active:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
 .main-content {
@@ -122,6 +132,11 @@
 
 .counter-btn:hover {
   transform: scale(1.05);
+}
+
+.counter-btn:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
 .counter-btn:active {
@@ -216,10 +231,15 @@
   transform: scale(1.05);
 }
 
+.btn-primary:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 .btn-secondary {
   background: white;
-  color: #667eea;
-  border: 2px solid #667eea;
+  color: #4c5bc4;
+  border: 2px solid #4c5bc4;
   padding: 0.75rem 2rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -229,8 +249,17 @@
 }
 
 .btn-secondary:hover {
-  background: #667eea;
+  background: #4c5bc4;
   color: white;
+}
+
+.btn-secondary:focus {
+  outline: 2px solid #4c5bc4;
+  outline-offset: 2px;
+}
+
+.btn-secondary:focus:hover {
+  outline-color: white;
 }
 
 .services-grid {
