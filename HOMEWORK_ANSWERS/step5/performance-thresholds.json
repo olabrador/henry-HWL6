@@ -1,0 +1,428 @@
+{
+  "version": "1.0.0",
+  "name": "Performance Thresholds Configuration",
+  "description": "Performance benchmarks and thresholds for UI validation",
+
+  "coreWebVitals": {
+    "largestContentfulPaint": {
+      "good": 2500,
+      "needsImprovement": 4000,
+      "poor": 6000,
+      "unit": "milliseconds",
+      "description": "Time for largest content element to render"
+    },
+    "firstInputDelay": {
+      "good": 100,
+      "needsImprovement": 300,
+      "poor": 500,
+      "unit": "milliseconds",
+      "description": "Time from user interaction to browser response"
+    },
+    "cumulativeLayoutShift": {
+      "good": 0.1,
+      "needsImprovement": 0.25,
+      "poor": 0.5,
+      "unit": "score",
+      "description": "Layout stability during page load"
+    },
+    "firstContentfulPaint": {
+      "good": 1800,
+      "needsImprovement": 3000,
+      "poor": 5000,
+      "unit": "milliseconds",
+      "description": "Time for first content to appear"
+    },
+    "interactionToNextPaint": {
+      "good": 200,
+      "needsImprovement": 500,
+      "poor": 1000,
+      "unit": "milliseconds",
+      "description": "Time from interaction to next frame"
+    }
+  },
+
+  "loadingMetrics": {
+    "timeToFirstByte": {
+      "good": 800,
+      "needsImprovement": 1800,
+      "poor": 3000,
+      "unit": "milliseconds",
+      "description": "Server response time"
+    },
+    "domContentLoaded": {
+      "good": 1500,
+      "needsImprovement": 2500,
+      "poor": 4000,
+      "unit": "milliseconds",
+      "description": "Time for DOM to be ready"
+    },
+    "loadComplete": {
+      "good": 2000,
+      "needsImprovement": 3500,
+      "poor": 6000,
+      "unit": "milliseconds",
+      "description": "Time for page to fully load"
+    },
+    "timeToInteractive": {
+      "good": 3500,
+      "needsImprovement": 5500,
+      "poor": 8000,
+      "unit": "milliseconds",
+      "description": "Time for page to become fully interactive"
+    },
+    "totalBlockingTime": {
+      "good": 200,
+      "needsImprovement": 600,
+      "poor": 1000,
+      "unit": "milliseconds",
+      "description": "Time page is blocked from responding to user input"
+    },
+    "speedIndex": {
+      "good": 3400,
+      "needsImprovement": 5800,
+      "poor": 8500,
+      "unit": "milliseconds",
+      "description": "How quickly page content is visually displayed"
+    }
+  },
+
+  "resourceMetrics": {
+    "totalRequests": {
+      "good": 50,
+      "needsImprovement": 75,
+      "poor": 100,
+      "unit": "requests",
+      "description": "Total number of HTTP requests"
+    },
+    "totalTransferSize": {
+      "good": 2048000,
+      "needsImprovement": 4096000,
+      "poor": 6144000,
+      "unit": "bytes",
+      "description": "Total size of all resources",
+      "formatted": {
+        "good": "2MB",
+        "needsImprovement": "4MB",
+        "poor": "6MB"
+      }
+    },
+    "imageSize": {
+      "good": 1048576,
+      "needsImprovement": 2097152,
+      "poor": 3145728,
+      "unit": "bytes",
+      "description": "Total size of image resources",
+      "formatted": {
+        "good": "1MB",
+        "needsImprovement": "2MB",
+        "poor": "3MB"
+      }
+    },
+    "scriptSize": {
+      "good": 512000,
+      "needsImprovement": 1024000,
+      "poor": 1536000,
+      "unit": "bytes",
+      "description": "Total size of JavaScript resources",
+      "formatted": {
+        "good": "512KB",
+        "needsImprovement": "1MB",
+        "poor": "1.5MB"
+      }
+    },
+    "stylesheetSize": {
+      "good": 102400,
+      "needsImprovement": 204800,
+      "poor": 307200,
+      "unit": "bytes",
+      "description": "Total size of CSS resources",
+      "formatted": {
+        "good": "100KB",
+        "needsImprovement": "200KB",
+        "poor": "300KB"
+      }
+    },
+    "fontSize": {
+      "good": 102400,
+      "needsImprovement": 204800,
+      "poor": 307200,
+      "unit": "bytes",
+      "description": "Total size of font resources",
+      "formatted": {
+        "good": "100KB",
+        "needsImprovement": "200KB",
+        "poor": "300KB"
+      }
+    }
+  },
+
+  "deviceSpecificThresholds": {
+    "mobile": {
+      "largestContentfulPaint": {
+        "good": 2500,
+        "needsImprovement": 4000,
+        "poor": 6000
+      },
+      "firstContentfulPaint": {
+        "good": 1800,
+        "needsImprovement": 3000,
+        "poor": 5000
+      },
+      "totalTransferSize": {
+        "good": 1536000,
+        "needsImprovement": 3072000,
+        "poor": 4608000,
+        "formatted": {
+          "good": "1.5MB",
+          "needsImprovement": "3MB",
+          "poor": "4.5MB"
+        }
+      }
+    },
+    "desktop": {
+      "largestContentfulPaint": {
+        "good": 2500,
+        "needsImprovement": 4000,
+        "poor": 6000
+      },
+      "firstContentfulPaint": {
+        "good": 1500,
+        "needsImprovement": 2500,
+        "poor": 4000
+      },
+      "totalTransferSize": {
+        "good": 2048000,
+        "needsImprovement": 4096000,
+        "poor": 6144000,
+        "formatted": {
+          "good": "2MB",
+          "needsImprovement": "4MB",
+          "poor": "6MB"
+        }
+      }
+    },
+    "tablet": {
+      "largestContentfulPaint": {
+        "good": 2500,
+        "needsImprovement": 4000,
+        "poor": 6000
+      },
+      "firstContentfulPaint": {
+        "good": 1600,
+        "needsImprovement": 2700,
+        "poor": 4500
+      },
+      "totalTransferSize": {
+        "good": 1792000,
+        "needsImprovement": 3584000,
+        "poor": 5376000,
+        "formatted": {
+          "good": "1.75MB",
+          "needsImprovement": "3.5MB",
+          "poor": "5.25MB"
+        }
+      }
+    }
+  },
+
+  "connectionSpecificThresholds": {
+    "slow3g": {
+      "largestContentfulPaint": {
+        "good": 6000,
+        "needsImprovement": 9000,
+        "poor": 12000
+      },
+      "firstContentfulPaint": {
+        "good": 3000,
+        "needsImprovement": 5000,
+        "poor": 7000
+      },
+      "totalTransferSize": {
+        "good": 1024000,
+        "needsImprovement": 2048000,
+        "poor": 3072000,
+        "formatted": {
+          "good": "1MB",
+          "needsImprovement": "2MB",
+          "poor": "3MB"
+        }
+      }
+    },
+    "fast3g": {
+      "largestContentfulPaint": {
+        "good": 4000,
+        "needsImprovement": 6000,
+        "poor": 9000
+      },
+      "firstContentfulPaint": {
+        "good": 2000,
+        "needsImprovement": 3500,
+        "poor": 5000
+      },
+      "totalTransferSize": {
+        "good": 1536000,
+        "needsImprovement": 3072000,
+        "poor": 4608000,
+        "formatted": {
+          "good": "1.5MB",
+          "needsImprovement": "3MB",
+          "poor": "4.5MB"
+        }
+      }
+    },
+    "4g": {
+      "largestContentfulPaint": {
+        "good": 2500,
+        "needsImprovement": 4000,
+        "poor": 6000
+      },
+      "firstContentfulPaint": {
+        "good": 1800,
+        "needsImprovement": 3000,
+        "poor": 5000
+      },
+      "totalTransferSize": {
+        "good": 2048000,
+        "needsImprovement": 4096000,
+        "poor": 6144000,
+        "formatted": {
+          "good": "2MB",
+          "needsImprovement": "4MB",
+          "poor": "6MB"
+        }
+      }
+    },
+    "5g": {
+      "largestContentfulPaint": {
+        "good": 2000,
+        "needsImprovement": 3500,
+        "poor": 5500
+      },
+      "firstContentfulPaint": {
+        "good": 1500,
+        "needsImprovement": 2500,
+        "poor": 4000
+      },
+      "totalTransferSize": {
+        "good": 3072000,
+        "needsImprovement": 6144000,
+        "poor": 9216000,
+        "formatted": {
+          "good": "3MB",
+          "needsImprovement": "6MB",
+          "poor": "9MB"
+        }
+      }
+    }
+  },
+
+  "userExperienceMetrics": {
+    "rageClicks": {
+      "threshold": 3,
+      "timeWindow": 1000,
+      "description": "Number of rapid clicks indicating user frustration"
+    },
+    "deadClicks": {
+      "threshold": 5,
+      "description": "Clicks on non-interactive elements"
+    },
+    "excessiveScrolling": {
+      "threshold": 5000,
+      "description": "Total scroll distance indicating content issues"
+    },
+    "formAbandonment": {
+      "threshold": 0.3,
+      "description": "Percentage of forms started but not completed"
+    },
+    "taskCompletionTime": {
+      "good": 120,
+      "needsImprovement": 300,
+      "poor": 600,
+      "unit": "seconds",
+      "description": "Time to complete primary tasks"
+    }
+  },
+
+  "alertingRules": {
+    "critical": {
+      "conditions": [
+        "largestContentfulPaint > 6000",
+        "firstInputDelay > 500",
+        "cumulativeLayoutShift > 0.5"
+      ],
+      "severity": "critical",
+      "message": "Critical performance degradation detected"
+    },
+    "warning": {
+      "conditions": [
+        "largestContentfulPaint > 4000",
+        "firstInputDelay > 300",
+        "timeToInteractive > 5500"
+      ],
+      "severity": "warning",
+      "message": "Performance issues detected"
+    },
+    "info": {
+      "conditions": ["totalTransferSize > 4096000", "totalRequests > 75"],
+      "severity": "info",
+      "message": "Resource usage above optimal levels"
+    }
+  },
+
+  "budgetOverrides": {
+    "marketingPages": {
+      "description": "Higher thresholds for marketing-heavy pages",
+      "adjustments": {
+        "totalTransferSize": {
+          "good": 3072000,
+          "needsImprovement": 5120000,
+          "poor": 7168000
+        },
+        "totalRequests": {
+          "good": 75,
+          "needsImprovement": 100,
+          "poor": 125
+        }
+      }
+    },
+    "adminPages": {
+      "description": "Lower thresholds for admin interfaces",
+      "adjustments": {
+        "timeToInteractive": {
+          "good": 2500,
+          "needsImprovement": 4000,
+          "poor": 6000
+        },
+        "totalTransferSize": {
+          "good": 1536000,
+          "needsImprovement": 2560000,
+          "poor": 3584000
+        }
+      }
+    }
+  },
+
+  "reporting": {
+    "scoreCalculation": {
+      "weights": {
+        "coreWebVitals": 0.4,
+        "loadingMetrics": 0.3,
+        "resourceMetrics": 0.2,
+        "userExperience": 0.1
+      },
+      "gradeThresholds": {
+        "A": { "min": 90, "max": 100 },
+        "B": { "min": 80, "max": 89 },
+        "C": { "min": 70, "max": 79 },
+        "D": { "min": 60, "max": 69 },
+        "F": { "min": 0, "max": 59 }
+      }
+    },
+    "exportOptions": {
+      "includeHistoricalData": true,
+      "comparisonPeriod": "30_days",
+      "trendAnalysis": true,
+      "recommendations": true
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "url": "http://localhost:5173/",
+  "timestamp": "2025-11-08T18:07:55.821Z",
+  "lighthouseReportPath": "HOMEWORK_ANSWERS/step5/localhost_2025-11-08_13-55-42.json",
+  "metrics": {
+    "coreWebVitals": {
+      "largestContentfulPaint": 1634.64,
+      "firstContentfulPaint": 1070.48,
+      "cumulativeLayoutShift": null,
+      "firstInputDelay": 25,
+      "interactionToNextPaint": null
+    },
+    "loadingMetrics": {
+      "timeToFirstByte": 3.4479999999999995,
+      "domContentLoaded": null,
+      "loadComplete": null,
+      "timeToInteractive": 1634.6400000000003,
+      "totalBlockingTime": null,
+      "speedIndex": 1070.48
+    },
+    "resourceMetrics": {
+      "totalRequests": 23,
+      "totalTransferSize": 1452877,
+      "imageSize": 0,
+      "scriptSize": 1449780,
+      "stylesheetSize": 0,
+      "fontSize": 0
+    },
+    "lighthouseScore": 92
+  },
+  "comparison": {
+    "coreWebVitals": {
+      "largestContentfulPaint": {
+        "value": 1634.64,
+        "threshold": {
+          "good": 2500,
+          "needsImprovement": 4000,
+          "poor": 6000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -865.3599999999999,
+        "percentageOverGood": -34.614399999999996
+      },
+      "firstInputDelay": {
+        "value": 25,
+        "threshold": {
+          "good": 100,
+          "needsImprovement": 300,
+          "poor": 500
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -75,
+        "percentageOverGood": -75
+      },
+      "firstContentfulPaint": {
+        "value": 1070.48,
+        "threshold": {
+          "good": 1800,
+          "needsImprovement": 3000,
+          "poor": 5000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -729.52,
+        "percentageOverGood": -40.528888888888886
+      }
+    },
+    "loadingMetrics": {
+      "timeToFirstByte": {
+        "value": 3.4479999999999995,
+        "threshold": {
+          "good": 800,
+          "needsImprovement": 1800,
+          "poor": 3000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -796.552,
+        "percentageOverGood": -99.569
+      },
+      "timeToInteractive": {
+        "value": 1634.6400000000003,
+        "threshold": {
+          "good": 3500,
+          "needsImprovement": 5500,
+          "poor": 8000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -1865.3599999999997,
+        "percentageOverGood": -53.295999999999985
+      },
+      "speedIndex": {
+        "value": 1070.48,
+        "threshold": {
+          "good": 3400,
+          "needsImprovement": 5800,
+          "poor": 8500
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "milliseconds",
+        "difference": -2329.52,
+        "percentageOverGood": -68.51529411764706
+      }
+    },
+    "resourceMetrics": {
+      "totalRequests": {
+        "value": 23,
+        "threshold": {
+          "good": 50,
+          "needsImprovement": 75,
+          "poor": 100
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "requests",
+        "difference": -27,
+        "percentageOverGood": -54
+      },
+      "totalTransferSize": {
+        "value": 1452877,
+        "threshold": {
+          "good": 2048000,
+          "needsImprovement": 4096000,
+          "poor": 6144000
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -595123,
+        "percentageOverGood": -29.058740234375
+      },
+      "imageSize": {
+        "value": 0,
+        "threshold": {
+          "good": 1048576,
+          "needsImprovement": 2097152,
+          "poor": 3145728
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -1048576,
+        "percentageOverGood": -100
+      },
+      "scriptSize": {
+        "value": 1449780,
+        "threshold": {
+          "good": 512000,
+          "needsImprovement": 1024000,
+          "poor": 1536000
+        },
+        "status": "poor",
+        "rating": "❌ Poor",
+        "unit": "bytes",
+        "difference": 937780,
+        "percentageOverGood": 183.16015625
+      },
+      "stylesheetSize": {
+        "value": 0,
+        "threshold": {
+          "good": 102400,
+          "needsImprovement": 204800,
+          "poor": 307200
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -102400,
+        "percentageOverGood": -100
+      },
+      "fontSize": {
+        "value": 0,
+        "threshold": {
+          "good": 102400,
+          "needsImprovement": 204800,
+          "poor": 307200
+        },
+        "status": "good",
+        "rating": "✅ Good",
+        "unit": "bytes",
+        "difference": -102400,
+        "percentageOverGood": -100
+      }
+    }
+  },
+  "bottlenecks": [
+    {
+      "category": "Resource Metrics",
+      "metric": "scriptSize",
+      "severity": "high",
+      "currentValue": 1449780,
+      "threshold": 512000,
+      "impact": "Large JavaScript files block rendering and increase parse time",
+      "recommendation": "Code splitting, tree shaking, minification, remove unused code, defer non-critical scripts"
+    }
+  ],
+  "summary": {
+    "totalMetrics": 12,
+    "good": 11,
+    "needsImprovement": 0,
+    "poor": 1,
+    "bottlenecksCount": 1,
+    "criticalBottlenecks": 1
+  },
+  "recommendations": [
+    {
+      "priority": "High",
+      "metric": "scriptSize",
+      "category": "Resource Metrics",
+      "issue": "scriptSize is poor",
+      "impact": "Large JavaScript files block rendering and increase parse time",
+      "recommendation": "Code splitting, tree shaking, minification, remove unused code, defer non-critical scripts",
+      "currentValue": "1.38 MB",
+      "targetValue": "500.00 KB"
+    }
+  ],
+  "score": 87,
+  "grade": "B"
+}
