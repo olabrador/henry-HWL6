@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background: #f0f0f0; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .metric { background: white; padding: 15px; border: 1px solid #ddd; border-radius: 5px; text-align: center; }
+        .metric h3 { margin: 0 0 10px 0; color: #333; }
+        .metric .value { font-size: 2em; font-weight: bold; }
+        .passed { color: #28a745; }
+        .failed { color: #dc3545; }
+        .recommendations { margin-top: 30px; }
+        .recommendation { background: white; border: 1px solid #ddd; border-radius: 5px; padding: 15px; margin-bottom: 10px; }
+        .priority-high { border-left: 4px solid #dc3545; }
+        .priority-medium { border-left: 4px solid #ffc107; }
+        .priority-low { border-left: 4px solid #28a745; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Accessibility Test Report</h1>
+        <p><strong>URL:</strong> http://localhost:5173</p>
+        <p><strong>Date:</strong> 8/11/2025, 1:03:06 p. m.</p>
+    </div>
+
+    <div class="summary">
+        <div class="metric">
+            <h3>Total Issues</h3>
+            <div class="value">1</div>
+        </div>
+        <div class="metric">
+            <h3>Accessibility Score</h3>
+            <div class="value">66/100</div>
+        </div>
+        <div class="metric">
+            <h3>WCAG A</h3>
+            <div class="value passed">
+                ✅
+            </div>
+        </div>
+        <div class="metric">
+            <h3>WCAG AA</h3>
+            <div class="value failed">
+                ❌
+            </div>
+        </div>
+    </div>
+
+    <div class="recommendations">
+        <h2>Top Recommendations</h2>
+        
+            <div class="recommendation priority-high">
+                <h3>Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</h3>
+                <p><strong>Priority:</strong> High | <strong>WCAG Level:</strong> Unknown | <strong>Affected Elements:</strong> 3</p>
+                <p><strong>Solution:</strong> Elements must meet minimum color contrast ratio thresholds</p>
+            </div>
+        
+    </div>
+</body>
+</html>
