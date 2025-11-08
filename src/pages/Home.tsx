@@ -11,21 +11,31 @@ function Home() {
       </p>
       <div className="card">
         <h2>Contador Interactivo</h2>
-        <button className="counter-btn" onClick={() => setCount(count + 1)}>
+        <button 
+          className="counter-btn" 
+          onClick={() => setCount(count + 1)}
+          aria-label={`Contador de clicks. Actualmente: ${count} clicks`}
+        >
           Clicks: {count}
         </button>
       </div>
-      <div className="features">
-        <div className="feature-card">
-          <h3>⚡ Rápido</h3>
+      <div className="features" role="list">
+        <div className="feature-card" role="listitem">
+          <h3>
+            <span aria-hidden="true">⚡</span> Rápido
+          </h3>
           <p>Desarrollo ultrarrápido con Vite</p>
         </div>
-        <div className="feature-card">
-          <h3>🎨 Moderno</h3>
+        <div className="feature-card" role="listitem">
+          <h3>
+            <span aria-hidden="true">🎨</span> Moderno
+          </h3>
           <p>Interfaz limpia y atractiva</p>
         </div>
-        <div className="feature-card">
-          <h3>🚀 Eficiente</h3>
+        <div className="feature-card" role="listitem">
+          <h3>
+            <span aria-hidden="true">🚀</span> Eficiente
+          </h3>
           <p>Optimizado para producción</p>
         </div>
       </div>

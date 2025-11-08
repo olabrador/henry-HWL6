@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, Suspense, lazy } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+
+// Lazy load pages for code splitting
+const Home = lazy(() => import("./pages/Home"));
+const Products = lazy(() => import("./pages/Products"));
+const Services = lazy(() => import("./pages/Services"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Inicio");
@@ -12,7 +14,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "Inicio":
-        return <Home />;
+        return <Products />;
       case "Productos":
         return <Products />;
       case "Servicios":
@@ -27,8 +29,12 @@ function App() {
   return (
     <div className="app">
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
-      <main className="main-content">{renderPage()}</main>
-      <footer className="footer">
+      <main id="main-content" className="main-content" role="main">
+        <Suspense fallback={<div className="loading">Cargando...</div>}>
+          {renderPage()}
+        </Suspense>
+      </main>
+      <footer className="footer" role="contentinfo">
         <p>© 2025 Mi Sitio. Todos los derechos reservados.</p>
       </footer>
     </div>

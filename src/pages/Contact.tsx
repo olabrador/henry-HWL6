@@ -32,28 +32,36 @@ function Contact() {
         <div className="contact-info">
           <h2>Información de Contacto</h2>
           <div className="info-item">
-            <span className="info-icon">📍</span>
+            <span className="info-icon" aria-hidden="true">📍</span>
             <div>
               <h3>Dirección</h3>
               <p>Calle Principal 123, Ciudad</p>
             </div>
           </div>
           <div className="info-item">
-            <span className="info-icon">📧</span>
+            <span className="info-icon" aria-hidden="true">📧</span>
             <div>
               <h3>Email</h3>
-              <p>contacto@misitio.com</p>
+              <p>
+                <a href="mailto:contacto@misitio.com" aria-label="Enviar email a contacto@misitio.com">
+                  contacto@misitio.com
+                </a>
+              </p>
             </div>
           </div>
           <div className="info-item">
-            <span className="info-icon">📱</span>
+            <span className="info-icon" aria-hidden="true">📱</span>
             <div>
               <h3>Teléfono</h3>
-              <p>+34 123 456 789</p>
+              <p>
+                <a href="tel:+34123456789" aria-label="Llamar al número +34 123 456 789">
+                  +34 123 456 789
+                </a>
+              </p>
             </div>
           </div>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit} aria-label="Formulario de contacto">
           <h2>Envíanos un Mensaje</h2>
           <div className="form-group">
             <label htmlFor="name">Nombre</label>

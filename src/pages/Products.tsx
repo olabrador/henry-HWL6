@@ -22,14 +22,19 @@ function Products() {
       <p className="description">
         Descubre nuestra selección de productos de alta calidad
       </p>
-      <div className="products-grid">
+      <div className="products-grid" role="list">
         {products.map((product) => (
-          <div key={product.id} className="product-card">
-            <div className="product-icon">📦</div>
+          <div key={product.id} className="product-card" role="listitem">
+            <div className="product-icon" aria-hidden="true">📦</div>
             <h3>{product.name}</h3>
             <p className="product-description">{product.description}</p>
-            <p className="product-price">{product.price}</p>
-            <button className="btn-primary">Comprar</button>
+            <p className="product-price" aria-label={`Precio: ${product.price}`}>{product.price}</p>
+            <button 
+              className="btn-primary"
+              aria-label={`Comprar ${product.name} por ${product.price}`}
+            >
+              Comprar
+            </button>
           </div>
         ))}
       </div>
